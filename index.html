@@ -114,23 +114,25 @@
             <div class="card">
                 <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                 <div class="card-body">
-                    <dl class="row">
-                        <dt class="col-3">Number of Guests</dt>
-                        <dd class="col-9">
-                            <input type="radio" id="1" name="numberofguests" value="1"><label for="1">1 &nbsp; &nbsp; &nbsp; &nbsp;</label>
-                            <input type="radio" id="2" name="numberofguests" value="2"><label for="2">2 &nbsp; &nbsp; &nbsp; &nbsp;</label>
-                            <input type="radio" id="3" name="numberofguests" value="3"><label for="3">3 &nbsp; &nbsp; &nbsp; &nbsp;</label>
-                            <input type="radio" id="4" name="numberofguests" value="4"><label for="4">4 &nbsp; &nbsp; &nbsp; &nbsp;</label>
-                            <input type="radio" id="5" name="numberofguests" value="5"><label for="5">5 &nbsp; &nbsp; &nbsp; &nbsp;</label>
-                            <input type="radio" id="6" name="numberofguests" value="6"><label for="6">6 &nbsp; &nbsp; &nbsp; &nbsp;</label>
-                        </dd>
-                            
-                        <dt class="col-3">Date and Time</dt>
+                    <form>
+                        <div class="form-group row">
+                            <label for="number" class="col-sm-3 control-lable">Number of guests</label>
+                            <div class="form-check mr-auto">
+                                <input type="radio" id="1" name="numberofguests" value="1"><label for="1">1 &nbsp; &nbsp; &nbsp; </label>
+                                <input type="radio" id="2" name="numberofguests" value="2"><label for="2">2 &nbsp; &nbsp; &nbsp; </label>
+                                <input type="radio" id="3" name="numberofguests" value="3"><label for="3">3 &nbsp; &nbsp; &nbsp; </label>
+                                <input type="radio" id="4" name="numberofguests" value="4"><label for="4">4 &nbsp; &nbsp; &nbsp; </label>
+                                <input type="radio" id="5" name="numberofguests" value="5"><label for="5">5 &nbsp; &nbsp; &nbsp; </label>
+                                <input type="radio" id="6" name="numberofguests" value="6"><label for="6">6 &nbsp; &nbsp; &nbsp; </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                        <label for="number" class="col-sm-3 control-lable">Date and time</label>
                         
-                            <div class="col-5 col-md-4">
+                            <div class="col-md-4">
                                 <input type="datee" class="form-control" id="datee" name="datee" placeholder="Date">
                             </div>
-                            <div class="col-5 col-md-4">
+                            <div class="col-md-4">
                                 <input type="timee" class="form-control" id="timee" name="timee" placeholder="Time">
                             </div>
                             <br><br>
@@ -138,10 +140,11 @@
                                 <div class="offset-md-3 col-md-4">
                                     <button type="submit" class="btn btn-primary">Reserve</button>
                                 </div>
+                            </div>
                            
-                        
-                    </dl>
+                    
                 </div>
+            </form>
             </div>
         </div>
     </div>
