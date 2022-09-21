@@ -39,6 +39,77 @@
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="cardreserve" role="dialog">
+        <div class=" modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h3 class="">Reserve a Table</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="number" class="col-sm-3 control-lable">Number of guests</label>
+                            <div class="form-check mr-auto">
+                                <input type="radio" id="1" name="numberofguests" value="1"><label for="1">1 &nbsp;
+                                    &nbsp; &nbsp; </label>
+                                <input type="radio" id="2" name="numberofguests" value="2"><label for="2">2 &nbsp;
+                                    &nbsp; &nbsp; </label>
+                                <input type="radio" id="3" name="numberofguests" value="3"><label for="3">3 &nbsp;
+                                    &nbsp; &nbsp; </label>
+                                <input type="radio" id="4" name="numberofguests" value="4"><label for="4">4 &nbsp;
+                                    &nbsp; &nbsp; </label>
+                                <input type="radio" id="5" name="numberofguests" value="5"><label for="5">5 &nbsp;
+                                    &nbsp; &nbsp; </label>
+                                <input type="radio" id="6" name="numberofguests" value="6"><label for="6">6 &nbsp;
+                                    &nbsp; &nbsp; </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                        <label for="section" class="col-sm-3 control-lable">Section</label>
+                            <div class="col-12 col-sm">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-success btn-sm active">
+                                        <input type="radio" name="nonsmoking" value="nonsmoking"
+                                            autocomplete="off"><label for="nonsmoking">Non-Smoking</label>
+                                    </label>
+                                    <label class="btn btn-danger btn-sm active">
+                                        <input type="radio" name="smoking" value="smoking" autocomplete="off"><label
+                                            for="smoking">Smoking</label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="number" class="col-sm-3 control-lable">Date and time</label>
+    
+                            <div class="col-md-4">
+                                <input type="datee" class="form-control" id="datee" name="datee" placeholder="Date">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="timee" class="form-control" id="timee" name="timee" placeholder="Time">
+                            </div>
+                            <br><br>
+                        </div>
+                            
+    
+                            <!-- <div class="col-md-4">
+                                <input type="timee" class="form-control" id="timee" name="timee" placeholder="Time">
+                            </div> -->
+                            <div class="offset-md-3 col-md-4">
+                                <div>
+                                    <button type="submit" class="btn btn-muted" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+    
+                </div>
+            </div>
+            </form>
+        </div>
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
@@ -95,7 +166,7 @@
 
                 <div class="col-sm">
                     <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-html="true"
-                        title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom"
+                        @ data-placement="bottom"
                         data-target="#cardreserve">Reserve Table</a>
                 </div>
             </div>
@@ -214,76 +285,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="cardreserve" role="dialog">
-            <div class="card modal-dialog modal-lg" role="content">
-                <div class="modal-header card-header bg-warning text-white">
-                    <h3 class="">Reserve a Table</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="card-body">
-                    <form>
-                        <div class="form-group row">
-                            <label for="number" class="col-sm-3 control-lable">Number of guests</label>
-                            <div class="form-check mr-auto">
-                                <input type="radio" id="1" name="numberofguests" value="1"><label for="1">1 &nbsp;
-                                    &nbsp; &nbsp; </label>
-                                <input type="radio" id="2" name="numberofguests" value="2"><label for="2">2 &nbsp;
-                                    &nbsp; &nbsp; </label>
-                                <input type="radio" id="3" name="numberofguests" value="3"><label for="3">3 &nbsp;
-                                    &nbsp; &nbsp; </label>
-                                <input type="radio" id="4" name="numberofguests" value="4"><label for="4">4 &nbsp;
-                                    &nbsp; &nbsp; </label>
-                                <input type="radio" id="5" name="numberofguests" value="5"><label for="5">5 &nbsp;
-                                    &nbsp; &nbsp; </label>
-                                <input type="radio" id="6" name="numberofguests" value="6"><label for="6">6 &nbsp;
-                                    &nbsp; &nbsp; </label>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                        <label for="section" class="col-sm-3 control-lable">Section</label>
-                            <div class="col-12 col-sm">
-                                <div class="btn-group" data-toggle="buttons">
-                                    <label class="btn btn-success btn-sm active">
-                                        <input type="radio" name="nonsmoking" value="nonsmoking"
-                                            autocomplete="off"><label for="nonsmoking">Non-Smoking</label>
-                                    </label>
-                                    <label class="btn btn-danger btn-sm active">
-                                        <input type="radio" name="smoking" value="smoking" autocomplete="off"><label
-                                            for="smoking">Smoking</label>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="number" class="col-sm-3 control-lable">Date and time</label>
-
-                            <div class="col-md-4">
-                                <input type="datee" class="form-control" id="datee" name="datee" placeholder="Date">
-                            </div>
-                            <div class="col-md-4">
-                                <input type="timee" class="form-control" id="timee" name="timee" placeholder="Time">
-                            </div>
-                            <br><br>
-                        </div>
-                            
-
-                            <!-- <div class="col-md-4">
-                                <input type="timee" class="form-control" id="timee" name="timee" placeholder="Time">
-                            </div> -->
-                            <div class="offset-md-3 col-md-4">
-                                <div>
-                                    <button type="submit" class="btn btn-muted" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary">Reserve</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                </div>
-                </form>
-            </div>
-        </div>
+    </div>
     </div>
     <br><br>
 
